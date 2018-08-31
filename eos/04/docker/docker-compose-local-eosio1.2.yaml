@@ -16,7 +16,7 @@ services:
 
   keosd:
     image: eosio/eos-dev:latest
-    command: /opt/eosio/bin/keosd --wallet-dir /opt/eosio/bin/data-dir --http-server-address=127.0.0.1:8900
+    command: /opt/eosio/bin/keosd --wallet-dir /opt/eosio/bin/data-dir --http-server-address=127.0.0.1:8900 --http-validate-host=false
     hostname: keosd
     links:
       - nodeosd
